@@ -29,7 +29,7 @@
 
 %%% Customisation %%%
 
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=0.75cm, vmargin=0.75cm]{geometry}
 \usepackage{titlesec}
 
 \titleformat{\section}{ % Customize the large section titles
@@ -139,7 +139,7 @@
     \vspace{0.1cm}
     \fontsize{13pt}{11pt}
     \selectfont
-    \textbf{\uppercase{#1}} | #2\\
+    \textbf{\uppercase{#1}} | #2\\[0.1cm]
     {
       \fontsize{10pt}{10pt}
       \selectfont
@@ -183,19 +183,28 @@
 
 
 \newcommand{\cvhead}{
-  \centering{
+  {
+    \noindent
     \fontsize{40pt}{60pt}
     \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont \printfname
     \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont \printlname
-  } \\[5pt]
-  \centering{
+  } \\[4pt]
+  {
+    \fontsize{20pt}{20pt}
+    \selectfont
+    \printfonction
+  }
+  \vspace{-0.3cm}
+  {
     \color{headings}
     \fontspec[Path = fonts/raleway/]{Raleway-Medium}
     \fontsize{11pt}{14pt}
     \selectfont
-    \printfonction \\
-    \href{mailto:\printmail}{\printmail}\ |\ \printphone
+    \begin{flushright}
+      \href{mailto:\printmail}{\printmail}\ |\ \printphone
+    \end{flushright}
   }
+  \vspace{-0.3cm}
   \noindent
   \makebox[\linewidth]
   {
