@@ -151,7 +151,7 @@
   {
     \vspace{0.15cm}
     \fontsize{10pt}{9pt}
-    \textbf{#1} — #2
+    \ifthenelse{\isempty{#1}}{}{\textbf{#1} — #2}
     \ifthenelse{\isempty{#3}}{}{— #3}
     \vspace{0.1cm}\\
   }
