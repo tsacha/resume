@@ -13,12 +13,14 @@
 
 \cvhead
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
 
   \section{Études}
 
-  \study{Licence pro. ASRALL}{Administration systèmes et réseaux à base de logiciels libres}{2012-13}{Nancy}{Mention Bien}
-  \study{DUT Informatique}{Informatique, culture scientifique, sociale, et humaine}{2010-12}{Nantes}{}
+  \study{Licence pro. ASRALL}{Admin. systèmes et réseaux à base de
+    logiciels libres}{2012-13}{Nancy}{Mention Bien}
+  \study{DUT Informatique}{Informatique, culture scientifique,
+    sociale, et humaine}{2010-12}{Nantes}{}
 
   \section{Liens}
 
@@ -28,7 +30,7 @@
 
 
   \section{Compétences}
-  \subsection{Système d'exploitation}
+  \subsection{OS}
   RHEL et dérivées \\
   Debian et dérivées \\
   Exp. régulière sous Windows Server
@@ -36,13 +38,13 @@
   \subsection{Technologies}
 
   \subsubsection{Supervision}
-  Nagios, Centreon, Sensu, Zabbix
+  Icinga2, Prometheus, Nagios, Centreon
 
   \subsubsection{Industrialisation}
-  Puppet, Ansible, SaltStack
+  Ansible, Puppet, SaltStack
 
   \subsubsection{Virtualisation}
-  LXC, Docker, KVM, Xen
+  LXC, Docker, KVM
 
   \subsubsection{Outillage}
   GLPI, FusionInventory
@@ -59,20 +61,29 @@
 
   \subsection{Langages}
   \subsubsection{Utilisation régulière}
-  Ruby\\
   Python\\
   Bash
 
   \subsubsection{Utilisation occasionnelle}
-  Perl, Powershell\\
+  Go \\
+  Ruby, Perl, Powershell\\
   HTML / CSS / PHP
 
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.63\textwidth}
+\begin{minipage}[t]{0.67\textwidth}
   \section{Expérience}
 
   \company{Capensis}{Administrateur Systèmes}{Depuis Octobre 2013}{Nantes}
+  \responsability{La Poste, DISIT}{Nantes (44)}{Depuis Juin 2016}
+  \xp{Conception d'une architecture complète de collecte de données de
+    supervision}{Icinga2, Docker, Ansible, RabbitMQ, Python3, ETCD…}
+  \txp{Utilisation initiale d'Icinga2 puis migration par plusieurs itérations vers une solution développée en Python respectant :}
+  \bulletxp{les contraintes de sécurité}
+  \bulletxp{le besoin de scalabilité horizontale}
+  \bulletxp{un nombre conséquent d’équipements supervisés en SNMP par
+    minute}
+  \bulletxp{la nécessité d'être déployée rapidement et facilement}
 
   \responsability{DCNS}{Brest (29)}{Avril 2015 à Décembre 2015}
   \xp{Évolution de Puppet déployé sur un parc de 2 000 serveurs hétérogènes}{Puppet, Foreman, r10k — Windows Server, AIX, Solaris, RedHat}
@@ -85,30 +96,26 @@
 
   \responsability{Missions au forfait de courte durée}{France}{}
   \xp{Déploiement industriel de solutions web (Canopsis, Talend)}{Puppet, Ansible}
-  \xp{Installations et mises à niveau de solutions de supervision}{Centreon, Nagios, Icinga2}
-  \xp{Développments et réglages réguliers de sondes de supervision}{SNMP, PHP, Perl, Ruby, Powershell}
-  \subxp{infrastructures logicielles \textit{(HTTP, mail, AD…)}}
-  \subxp{matérielles \textit{(ESX, 3Par, Tina, HP Blade…)}}
-  \xp{Mise en place d'une architecture en haute-disponibilité de reverse proxys}{Corosync, Pacemaker, HAProxy, Nginx}
-  \xp{Mise à disposition de maquette d'une solution d'hypervision}{Canopsis}
-  \xp{Installations d'un outil de ticketing et d'inventaire et développements d'extensions complémentaires}{GLPI, FusionInventory, PHP}
+  \xp{Installations et mises à niveau de solutions de
+    supervision}{Icinga2, Nagios, Centreon}
+  \xp{Développments réguliers de sondes de supervision}{SNMP, PHP, Perl, Ruby, Powershell}
+  \bulletxp{infrastructures logicielles \textit{(HTTP, mail, AD…)}}
+  \bulletxp{matérielles \textit{(ESX, 3Par, Tina, HP Blade…)}}
+  \xp{Mise en place d'architectures web en
+    haute-disponibilité}{Corosync, Pacemaker, KeepAlived, HAProxy, Nginx…}
   \xp{Dispense de formations professionnelles}{PostgreSQL, RH135, Centreon}
-  \xp{Installation d'un proxy web avec règles de filtrage et d'authentification}{Squid, ufdbGuard, Kerberos, LDAP}
-  \xp{Installation et configuration de firewall}{pfSense}
 
   \company{Findspire}{Stage | Administrateur Systèmes}{Juin 2013 à Octobre 2013}{Nancy}
-  \responsability{}{}{}
   \xp{Industrialisation avec Puppet d'un environnement web en haute disponibilité pour un réseau social artistique}{Puppet, Git, Docker, LXC, Gunicorn}
 
-  \section{Langues} 
+  \section{Langues}
   \cvline{Anglais : bonne compréhension orale et écrite, écrit technique}
 
-  \section{Centres d'intérêts} 
+  \section{Centres d'intérêts}
   \cvline{Cinéma international (D. Lynch, F. Fellini, A. Farhadi…)}
   \cvline{Communauté du logiciel libre (cours et présentations au sein d'associations)}
-  \cvline{Hébergement associatif — Terrain d'expérimentations technologiques (SaltStack)}
-
-
+  \cvline{Hébergement associatif — Terrain d'expérimentations
+    technologique}
 
 \end{minipage}
 

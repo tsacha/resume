@@ -1,4 +1,4 @@
-%%% General %%% 
+%%% General %%%
 \ProvidesClass{tsacha-resume}
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -29,7 +29,7 @@
 
 %%% Customisation %%%
 
-\usepackage[hmargin=0.75cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=0.3cm, vmargin=0.3cm]{geometry}
 \usepackage{titlesec}
 
 \titleformat{\section}{ % Customize the large section titles
@@ -79,7 +79,6 @@
     MàJ : \today
   \end{textblock}
 }
-
 
 %% Commands definitions
 
@@ -143,7 +142,7 @@
     {
       \fontsize{10pt}{10pt}
       \selectfont
-      #3 | #4\\
+      #3 | #4\\[0.2cm]
     }
   }
 }
@@ -160,7 +159,7 @@
   \vspace{0.1cm}
   \fontsize{8pt}{8pt}
   \begin{minipage}[t]{0.02\textwidth}
-    \ 
+    \
   \end{minipage}
   \begin{minipage}[t]{0.02\textwidth}
     \textbullet
@@ -170,12 +169,23 @@
     \ifthenelse{\isempty{#2}}{#1}{#1\\\textit{#2}}
   \end{minipage}\vspace{0.1cm}
 }
-\newcommand{\subxp}[1]{
-  \begin{minipage}[t]{0.15\textwidth}
-    \ 
+\newcommand{\txp}[1]{
+  \vspace{0.1cm}
+  \fontsize{8pt}{8pt}
+  \begin{minipage}[t]{0.05\textwidth}
+    \
   \end{minipage}
-  \begin{minipage}[t]{0.85\textwidth}
-    — #1
+  \begin{minipage}[t]{0.95\textwidth}
+    \raggedright
+    #1
+  \end{minipage}\vspace{0.1cm}
+}
+\newcommand{\bulletxp}[1]{
+  \begin{minipage}[t]{0.08\textwidth}
+    \
+  \end{minipage}
+  \begin{minipage}[t]{0.92\textwidth}
+    $\circ$\hspace{0.15cm}#1
   \end{minipage}\vspace{0.1cm}\\
 }
 \newcommand{\cvline}[1]{#1\\}
@@ -213,4 +223,3 @@
   }
   \vspace{-5pt}
 }
-
