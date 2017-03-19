@@ -8,7 +8,7 @@
 \usepackage[francais]{babel}
 \renewcommand{\FrenchLabelItem}{}
 \usepackage{xifthen}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 %% Colors
 \usepackage[usenames,dvipsnames]{xcolor}
