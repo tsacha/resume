@@ -33,7 +33,6 @@
 \usepackage{titlesec}
 
 \titleformat{\section}{ % Customize the large section titles
-  \vspace{0.1cm}
   \color{headings}
   \fontspec[Path = fonts/lato/]{Lato-Lig}
   \fontsize{16pt}{24pt}
@@ -156,7 +155,7 @@
   }
 }
 \newcommand{\xp}[2]{
-  \vspace{0.1cm}
+  \vspace{0.075cm}
   \fontsize{8pt}{8pt}
   \begin{minipage}[t]{0.02\textwidth}
     \
@@ -170,26 +169,26 @@
   \end{minipage}\vspace{0.1cm}
 }
 \newcommand{\txp}[1]{
-  \vspace{0.1cm}
   \fontsize{8pt}{8pt}
   \begin{minipage}[t]{0.05\textwidth}
     \
   \end{minipage}
   \begin{minipage}[t]{0.95\textwidth}
     \raggedright
-    #1
-  \end{minipage}\vspace{0.1cm}
+    #1\vspace{0.1cm}
+  \end{minipage}
 }
 \newcommand{\bulletxp}[1]{
+  \vspace{0.05cm}
   \begin{minipage}[t]{0.08\textwidth}
     \
   \end{minipage}
   \begin{minipage}[t]{0.92\textwidth}
     $\circ$\hspace{0.15cm}#1
-  \end{minipage}\vspace{0.1cm}\\
+  \end{minipage}\vspace{0.05cm}\\
 }
 \newcommand{\cvline}[1]{#1\\}
-\newcommand{\cvlink}[2]{\textbf{#1 :}\\\href{#2}{#2}\\}
+\newcommand{\cvlink}[2]{\vspace{0.1cm}\textbf{#1 :}\\\href{#2}{#2}\\}
 
 
 \newcommand{\cvhead}{
@@ -204,7 +203,7 @@
     \selectfont
     \printfonction
   }
-  \vspace{-0.3cm}
+  \vspace{-0.8cm}
   {
     \color{headings}
     \fontspec[Path = fonts/raleway/]{Raleway-Medium}
