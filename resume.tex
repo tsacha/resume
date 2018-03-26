@@ -23,11 +23,9 @@
     sociale, et humaine}{2010-12}{Nantes}{}
 
   \section{Liens}
-
   \cvlink{Blog}{https://s.tremoureux.fr/}
   \cvlink{GitHub}{https://github.com/tsacha/}
   \cvlink{LinkedIn}{https://fr.linkedin.com/in/tsacha/}
-
 
   \section{Compétences}
   \subsection{OS}
@@ -37,23 +35,24 @@
 
   \subsection{Technologies}
 
-  \subsubsection{Supervision}
-  Icinga2, Prometheus, Nagios, Centreon
+  \subsubsection{Supervision et Logs}
+  Icinga2, Prometheus, Nagios\\
+  Elastic Stack, Rsyslog
 
   \subsubsection{Industrialisation}
-  Ansible, Puppet, SaltStack
+  Ansible, SaltStack, Puppet
 
-  \subsubsection{Virtualisation}
+  \subsubsection{Virtualisation / Conteneurs}
   LXC, Docker, KVM
 
-  \subsubsection{Outillage}
-  GLPI, FusionInventory
-
   \subsubsection{Web}
-  Apache, Nginx, Varnish, Squid
+  Nginx, Apache, HAProxy, Varnish
+
+  \subsubsection{DB}
+  PostgreSQL, MariaDB
 
   \subsubsection{Mail}
-  Doveot, Postfix, Zimbra
+  Dovecot, Postfix, RSpamd
 
   \subsubsection{Sécurité}
   iptables, SELinux, Kerberos
@@ -62,6 +61,7 @@
   \subsection{Langages}
   \subsubsection{Utilisation régulière}
   Python\\
+  SQL \\
   Bash
 
   \subsubsection{Utilisation occasionnelle}
@@ -72,50 +72,52 @@
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.67\textwidth}
+
   \section{Expérience}
 
-  \company{Capensis}{Administrateur Systèmes}{Depuis Octobre 2013}{Nantes}
-  \responsability{La Poste, DISIT}{Nantes (44)}{Depuis Juin 2016}
+  %%% Neocom
+  \company{Neocom Multimédia}{Administrateur Systèmes}{Décembre 2017 - Avril 2018}{Nantes}
+  \xp{Exploitation et développement d'une infrastructure télécom}{Asterisk, Ansible, Git, Zabbix, Nginx, Ceph, Proxmox}
+  \txp{Automatisation et déploiement d'applications audio en PHP}
+  \bulletxp{Homogénéisation des socles (OS et versions logicielles)}
+  \txp{Force de proposition pour moderniser les pratiques :}
+  \bulletxp{Simplification des mises en production}
+  \bulletxp{Dialogue entre les équipes de développement et d'exploitation}
+  \bulletxp{Dispense de formation interne pour Git et Ansible}
+  \txp{Migration vers l'offre Cloud Public d'OVH :}
+  \bulletxp{Développements Python pour l'utilisation de l'API OpenStack}
+  \bulletxp{Tunnels IPSec en HA avec Strongswan et HAProxy}
+
+  %%% Weborama
+  \company{Weborama}{Administrateur Systèmes}{Juillet 2017 - Décembre 2017}{Paris / Nantes}
+  \xp{Exploitation et développmement d'une infrastructure de collecte de données}{ElasticSearch, RabbitMQ, Couchbase, Zabbix, Git, SaltStack}
+  \txp{Environnement à fortes contraintes}
+  \bulletxp{Haute-disponibilité}
+  \bulletxp{Grand nombre de requêtes par secondes}
+
+  %% Capensis
+  \company{Capensis}{Administrateur Systèmes}{Octobre 2013 - Juillet 2017}{Nantes}
+  \responsability{Missions en régie de longue durée}{Nantes, Brest, Lille}{DCNS, La Poste, Decathlon}
   \xp{Conception d'une architecture complète de collecte de données de
     supervision}{Icinga2, Docker, Ansible, RabbitMQ, Python3, ETCD…}
-  \txp{Utilisation initiale d'Icinga2 puis migration par plusieurs itérations vers une solution développée en Python respectant :}
-  \bulletxp{les contraintes de sécurité}
-  \bulletxp{le besoin de scalabilité horizontale}
-  \bulletxp{un nombre conséquent d’équipements supervisés en SNMP par
-    minute}
-  \bulletxp{la nécessité d'être déployée rapidement et facilement}
-
-  \responsability{DCNS}{Brest (29)}{Avril 2015 à Décembre 2015}
-  \xp{Évolution de Puppet déployé sur un parc de 2 000 serveurs hétérogènes}{Puppet, Foreman, r10k — Windows Server, AIX, Solaris, RedHat}
-  \xp{Maintien et développement d'une infrastructure d'orchestration}{MCollective, ActiveMQ}
-  \xp{Maintien de GLPI, création de plugins et scripts d'inventaire}{GLPI, FusionInventory}
-  \xp{Gestion de Centreon, développement de sondes de supervision}{Centreon, Powershell, Perl}
-
-  \responsability{Decathlon}{Lille (59)}{Octobre 2014 à Décembre 2014}
-  \xp{Homogénéisation, industrialisation et supervision d'un parc de serveurs}{Puppet, Centreon, ActiveDirectory}
-
-  \responsability{Missions au forfait de courte durée}{France}{}
+  \txp{Solution développée en Python respectant les contraintes de sécurité, la scalabilité horizontale et le nombre d'équipement à superviser}
+  \xp{Gestion de Puppet et de MCollective déployés sur un parc de 2 000 serveurs}{Puppet, Foreman, MCollective, ActiveMQ, r10k — Windows Server, AIX, Solaris, RedHat}
+  \responsability{Missions au forfait de courte durée}{France entière}{}
   \xp{Déploiement industriel de solutions web (Canopsis, Talend)}{Puppet, Ansible}
-  \xp{Installations et mises à niveau de solutions de
-    supervision}{Icinga2, Nagios, Centreon}
-  \xp{Développments réguliers de sondes de supervision}{SNMP, PHP, Perl, Ruby, Powershell}
-  \bulletxp{infrastructures logicielles \textit{(HTTP, mail, AD…)}}
-  \bulletxp{matérielles \textit{(ESX, 3Par, Tina, HP Blade…)}}
+  \xp{Développments de sondes de supervision pour des infrastructures logicielles et matérielles}{SNMP, PHP, Python, Perl, Ruby, Powershell}
   \xp{Mise en place d'architectures web en
     haute-disponibilité}{Corosync, Pacemaker, KeepAlived, HAProxy, Nginx…}
   \xp{Dispense de formations professionnelles}{PostgreSQL, RH135, Centreon}
-
   \company{Findspire}{Stage | Administrateur Systèmes}{Juin 2013 à Octobre 2013}{Nancy}
   \xp{Industrialisation avec Puppet d'un environnement web en haute disponibilité pour un réseau social artistique}{Puppet, Git, Docker, LXC, Gunicorn}
 
   \section{Langues}
-  \cvline{Anglais : bonne compréhension orale et écrite, écrit technique}
+  Anglais : bonne compréhension orale et écrite, écrit technique
 
   \section{Centres d'intérêts}
-  \cvline{Cinéma international (D. Lynch, F. Fellini, A. Farhadi…)}
-  \cvline{Communauté du logiciel libre (cours et présentations au sein d'associations)}
-  \cvline{Hébergement associatif — Terrain d'expérimentations
-    technologique}
+  Cinéma international (D. Lynch, F. Fellini, A. Farhadi…) \\
+  Communauté du logiciel libre (cours et résentations au sein d'associations) \\
+  Hébergement associatif — Terrain d'expérimentations technologique
 
 \end{minipage}
 
