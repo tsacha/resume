@@ -1,6 +1,6 @@
 # Sacha Trémoureux - Administrateur systèmes Linux
 
-> 27 ans  
+> 28 ans  
 > Permis B, sans voiture  
 > Agglomération nantaise
 
