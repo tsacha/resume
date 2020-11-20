@@ -6,22 +6,22 @@
 
 ## Éducation
 
-**2012-2013** -	Licence professionnelle ASRALL
-				*(Administration Systèmes et Réseaux à base de Logiciels Libre)*  
-				Université Nancy-Charlemagne  
-				Mention Bien
+**2012-2013**	-	Licence professionnelle ASRALL
+					*(Administration Systèmes et Réseaux à base de Logiciels Libre)*  
+					Université Nancy-Charlemagne  
+					Mention Bien
 
 ---
-**2010-2012** -	DUT Informatique - Université de Nantes
+**2010-2012**	-	DUT Informatique - Université de Nantes
 
 ---
-**2010** -	Baccalauréat Scientifique - Guérande
+**2010**		-	Baccalauréat Scientifique - Guérande
 
 
 ## Langues :
 
-**Anglais** -	Bonne compréhension orale et écrite. - TOEIC 755  
-				Habitué à communiquer techniquement avec des équipes internationales.
+**Anglais**		-	Bonne compréhension orale et écrite. - TOEIC 755  
+					Habitué à communiquer techniquement avec des équipes internationales.
 
 
 ## Expériences professionnelle
@@ -149,6 +149,7 @@ Exploitation et développement de l’ensemble de l’infrastructure technique.
 -	Centre Hospitalier du Haut-Anjou (53) - Migration Zimbra
 
 ### **Findspire** - Avril à Octobre 2013
+
 *Stage de fin d'étude et Stage CNAM*
 
 -	Développement d'une plateforme web en haute disponibilité pour un
@@ -158,6 +159,7 @@ réseau social artistique.
 -	Documentation.
 
 ### **DSI Centrale - La Poste** - Avril à Juin 2012
+
 *Stage DUT - Pôle Outillage interne*
 
 -	Reprise du développement d'une extension Word permettant la gestion de modèles de documents.  
