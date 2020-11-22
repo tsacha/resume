@@ -1,0 +1,196 @@
+%-------------------------
+% Template by Sourabh Bajaj (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\frenchsetup{StandardLists=True}
+
+
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+\newcommand{\resumeDescriptionItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeDescriptionItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://s.tremoureux.fr}{\Large Sacha Trémoureux}} & Email : \href{mailto:sacha@tremoureux.fr}{sacha@tremoureux.fr}\\
+  Administrateur systèmes Linux / DevOps & Mobile : +33 (0)7 86 46 93 68 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+
+\section{Études}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Licence professionnelle ASRALL}{Université Nancy-Charlemagne}
+      {Administration Systèmes et Réseaux à base de Logiciels Libres, Mention Bien}{2012 - 2013}
+    \resumeSubheading
+      {DUT Informatique}{Université de Nantes}
+      {Informatique, culture scientifique, sociale et humaine}{2010 - 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Expériences}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {iRaiser}{Saint-Sébastien-sur-Loire}
+      {DevOps — Administrateur systèmes}{Mai 2018 - Aujourd'hui}
+      \resumeItemListStart
+        \resumeItem{
+          Maintenance et développement de l'ensemble de l'infrastructure technique : plateformes de collecte en ligne, et d'instances CRM à destination de clients.
+        }
+        \resumeItem{Fort trafic évènementiel : émissions télé, catastrophes (e.g: incendie Cathédrale Notre-Dame).}
+        \resumeItem{Migration progressive de l’infrastructure sur AWS couplée avec Terraform. \\
+          \textit{EC2, ALB, CloudFront, DynamoDB, Lambda, Route53, ECS, S3, SQS/SNS, WAF…}.
+        }
+        \resumeItem{Modernisation de la stack de supervision sous Prometheus, AlertManager et Grafana.}
+        \resumeItem{Mise en place de la collecte des logs avec ElasticSearch, Filebeat et AWS Lambda.}
+        \resumeItem{Administration et automatisation des outils internes \textit{(GitLab, Odoo, Mattermost, OpenVPN…)}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Neocom Multimédia}{Rezé}
+      {Administrateur systèmes}{Décembre 2017 - Avril 2018}
+
+      \resumeItemListStart
+        \resumeItem{Exploitation et développement d'une infrastructure télécom.}
+        \resumeItem{Simplification et automatisation de la mises en production d'applications audio en PHP.}
+        \resumeItem{
+          Migration vers l'offre CloudPublic d'OVH. \\
+          Développements Python pour l'utilisation de l'API OpenStack.
+        }
+        \resumeItem{Mise en place de tunnels IPSec en HA avec Strongswan et HAProxy.}
+      \resumeItemListEnd
+
+
+  \resumeSubheading
+      {Weborama}{Paris / Nantes}
+      {Administrateur systèmes — Équipe SRE}{Juillet 2017 - Décembre 2017}
+
+      \resumeItemListStart
+        \resumeItem{
+          Exploitation et développmement d'une infrastructure de collecte de données. \\
+          Environnement à fortes contraintes : haute-disponibilité et grand nombre de requêtes par seconde.
+        }
+        \resumeItem{Maintenance de clusters ElasticSearch, RabbitMQ, Couchbase.}
+        \resumeItem{Supervision de l'infrastructure sous Zabbix.}
+        \resumeItem{Développement de \textit{states} SaltStack.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Capensis}{Nantes}
+      {Administrateur systèmes}{Octobre 2013 - Juillet 2017}
+      \resumeItemListStart
+        \resumeItem{Prestations de longues et de courtes durées d'administration système orientées Linux}
+        \resumeItem{
+          Maintenance de la gestion de configuration \textit{(Ansible, Puppet)} et de la supervision \textit{(Centreon, Icinga2, Zabbix, Nagios)} dans de larges parcs hétérogènes. — \textit{Decathlon, DCNS, La Poste} \\
+
+        }
+        \resumeItem{
+          Conception d'architectures web en haute-disponibilité,
+          d'architectures de monitoring, développements de sondes de supervision.
+        }
+        \resumeItem{Dispense de formations professionnelles \textit{(PostgreSQL, RH135, Centreon)}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Langues}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Anglais}{: Bonne compréhension orale et écrite habitué à communiquer techiquement avec des équipes internationales.}
+    }
+  \resumeSubHeadingListEnd
+
+\section{Projets}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Milieu associatif du logiciel libre}
+      {De 2017 à 2019, hébergement de d'alternatives aux GAFAM, terrain d'expérimentations technologiques.}
+  \resumeSubHeadingListEnd
+
+
+\end{document}

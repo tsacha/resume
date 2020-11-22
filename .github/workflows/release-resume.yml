@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Compile resume with XeLaTeX
+      - name: Compile resume with PdfTeX
         uses: docker://texlive/texlive:latest
         with:
-          args: /usr/bin/xelatex cv.tex
+          args: /usr/bin/pdflatex resume.tex
       - name: Upload result
         uses: actions/upload-artifact@v2
         with:
-          name: cv.pdf
-          path: cv.pdf
+          name: resume.pdf
+          path: resume.pdf
   release:
     needs: [build]
     runs-on: ubuntu-20.04
@@ -36,7 +36,7 @@ jobs:
       - name: Download artifact for release
         uses: actions/download-artifact@v1
         with:
-          name: cv.pdf
+          name: resume.pdf
           path: ./
       - name: Upload release asset
         id: upload-release-asset
@@ -45,8 +45,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./cv.pdf
-          asset_name: cv.pdf
+          asset_path: ./resume.pdf
+          asset_name: resume.pdf
           asset_content_type: application/pdf
       - name: Publish release
         uses: eregon/publish-release@v1
