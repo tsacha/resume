@@ -32,8 +32,9 @@
 - *Kubernetes* : EKS, Helm, ArgoCD, Karpenter, KEDA
 - *Cloud & IaC* : AWS, GCP, Azure — Terraform / OpenTofu, FinOps
 - *Infrastructure LLM* : Azure OpenAI, Amazon Bedrock, Google Vertex AI
+- *Données & messaging* : MySQL/MariaDB, PostgreSQL, Kafka, RabbitMQ
 - *Observabilité* : Prometheus, Grafana, OpenTelemetry, Datadog
-- *Systèmes & langages* : Linux, Python, Go, Bash
+- *Systèmes & langages* : GNU/Linux, Python, Go, Bash
 
 == Expériences
 
@@ -44,10 +45,10 @@
   dates: dates-helper(start-date: "Mars 2022", end-date: "Aujourd'hui"),
 )
 - À l'initiative de la migration de la plateforme de Nomad vers Kubernetes (EKS) — 150 microservices, environ 12 000 requêtes/seconde.
-- Construction de la plateforme cible : autoscaling Karpenter / KEDA, GitOps avec ArgoCD, gestion des secrets via Vault Operator.
-- Déploiement de l'infrastructure LLM d'une IA conversationnelle pour l'e-commerce : Azure OpenAI sur 13 régions, embeddings Google Vertex AI, tunnels IPSec vers AWS ; supervision des latences, quotas et coûts.
-- Exploitation de la plateforme multi-cloud (AWS principal, GCP / Azure) : Terraform / OpenTofu, migrations de bases de données, Kafka (Amazon MSK).
-- FinOps : optimisation continue de la facture AWS — généralisation des instances spot, gestion active des réservations (compute, bases de données), coûts intégrés à chaque décision d'architecture.
+- Construction de la plateforme cible en OpenTofu : autoscaling Karpenter / KEDA, GitOps ArgoCD, secrets via Vault Operator.
+- Déploiement de l'infrastructure LLM d'une IA conversationnelle pour l'e-commerce : Azure OpenAI multi-régions, embeddings Google Vertex AI, tunnels IPSec vers AWS ; supervision des latences, quotas et coûts.
+- Exploitation des services de données et de messagerie (MySQL / PostgreSQL sur RDS, Kafka MSK, RabbitMQ) : migrations, montées de version sans interruption, dimensionnement, diagnostic.
+- FinOps : optimisation de la facture AWS — instances spot, réservations (compute, bases de données), coûts intégrés aux décisions d'architecture.
 - Référent technique de l'équipe système : mentoring, cadrage et chiffrage des projets, standards techniques.
 - Contribution à la certification ISO 27001 : audits annuels, PRA / DRP, en lien avec le RSSI.
 
@@ -58,7 +59,7 @@
   dates: dates-helper(start-date: "Mai 2018", end-date: "Mars 2022"),
 )
 - En charge de l'ensemble de l'infrastructure d'une plateforme de dons en ligne (paiement, SLA, RGPD), exposée à des pics de trafic soudains liés à l'actualité et aux émissions TV.
-- Migration de l'infrastructure vers AWS (EC2, ECS, Lambda, CloudFront, DynamoDB, SQS/SNS…) avec IaC Terraform.
+- Migration de l'infrastructure vers AWS (EC2, ECS, Lambda, RDS, DynamoDB, SQS/SNS…) avec IaC Terraform.
 - Automatisation des déploiements clients et des instances CRM Odoo via Ansible et Jenkins.
 - Modernisation de la supervision (Prometheus, Grafana) et de la collecte de logs (Elasticsearch, Filebeat).
 
